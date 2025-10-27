@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUXE Jewelry – Elegance in Every Detail</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header id="site-header" class="flex justify-between items-center px-8 py-4">
+    <h1 onclick="window.location.href='index.html'" class="text-2xl font-serif logo-btn">LUXE Jewelry</h1>
+
+    <nav class="flex items-center gap-6">
+      <a href="index.html" class="font-medium">Home</a>
+      <a href="shop.html" class="font-medium">Shop</a>
+      <a href="about.html" class="font-medium">About Us</a>
+      <a href="contact.html" class="font-medium">Contact</a>
+
+      <!-- Cart icon -->
+      <a href="cart.html" class="text-xl" aria-label="Cart">🛒</a>
+
+      <!-- Profile dropdown -->
+      <div class="relative" id="profile-dropdown">
+        <button id="profileBtn"
+                aria-haspopup="true"
+                aria-expanded="false"
+                class="flex items-center gap-2 px-3 py-1 rounded-full border"
+                title="Account">
+          <span class="w-8 h-8 rounded-full bg-[#efe6d6] flex items-center justify-center font-semibold text-sm" aria-hidden="true">LJ</span>
+        </button>
+
+        <div id="profileMenu"
+             class="hidden absolute right-0 mt-2 w-48 rounded shadow-lg origin-top-right ring-1 ring-black/5 bg-white"
+             role="menu"
+             aria-orientation="vertical"
+             aria-labelledby="profileBtn">
+          <a href="#" class="block px-4 py-3 text-sm hover:bg-gray-50" role="menuitem">Profile</a>
+          <a href="#" class="block px-4 py-3 text-sm hover:bg-gray-50" role="menuitem">Account settings</a>
+          <div class="border-t my-1"></div>
+          <button id="darkToggle"
+                  class="w-full text-left px-4 py-3 text-sm hover:bg-gray-50 flex items-center justify-between"
+                  role="menuitem">
+            <span>Dark mode</span>
+            <span id="darkIcon" class="text-sm text-gray-600">🌙</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative">
+    <img src="../assets/img/hero.jpg" alt="Luxury Jewelry" class="w-full h-[70vh] object-cover">
+    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+      <div class="text-center text-white">
+        <h2 class="text-4xl md:text-6xl font-serif mb-4">Shine with Elegance</h2>
+        <p class="text-lg mb-6">Discover unique handmade jewelry</p>
+        <a href="shop.html" class="bg-primary-color text-white px-6 py-3 rounded-lg hover:bg-hover-color transition">View Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="py-16 px-6 md:px-12">
+    <h3 class="text-3xl font-serif text-center mb-10">Our Best-Selling Pieces</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="product-card p-4 rounded-lg border">
+        <img src="../assets/img/product1.jpg" alt="White Gold Ring" class="w-full mb-4">
+        <h4 class="text-xl font-serif mb-2">White Gold Ring</h4>
+        <p class="text-gray-600 mb-3">$89.990</p>
+        <a href="product.html" class="inline-block btn px-4 py-2 rounded">View Details</a>
+      </div>
+
+      <div class="product-card p-4 rounded-lg border">
+        <img src="../assets/img/product2.jpg" alt="Silver Necklace" class="w-full mb-4">
+        <h4 class="text-xl font-serif mb-2">Silver Necklace</h4>
+        <p class="text-gray-600 mb-3">$59.990</p>
+        <a href="product.html" class="inline-block btn px-4 py-2 rounded">View Details</a>
+      </div>
+
+      <div class="product-card p-4 rounded-lg border">
+        <img src="../assets/img/product3.jpg" alt="Diamond Earrings" class="w-full mb-4">
+        <h4 class="text-xl font-serif mb-2">Diamond Earrings</h4>
+        <p class="text-gray-600 mb-3">$129.990</p>
+        <a href="product.html" class="inline-block btn px-4 py-2 rounded">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 mt-12">
+    <p class="text-sm">&copy; 2025 LUXE Jewelry. All rights reserved.</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

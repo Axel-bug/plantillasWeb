@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us – LUXE Jewelry</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header id="site-header" class="flex justify-between items-center px-8 py-4">
+    <h1 onclick="window.location.href='index.html'" class="text-2xl font-serif logo-btn">LUXE Jewelry</h1>
+
+    <nav class="flex items-center gap-6">
+      <a href="index.html" class="font-medium">Home</a>
+      <a href="shop.html" class="font-medium">Shop</a>
+
+      <!-- Profile dropdown -->
+      <div class="relative" id="profile-dropdown">
+        <button id="profileBtn"
+                aria-haspopup="true"
+                aria-expanded="false"
+                class="flex items-center gap-2 px-3 py-1 rounded-full border"
+                title="Account">
+          <span class="w-8 h-8 rounded-full bg-[#efe6d6] flex items-center justify-center font-semibold text-sm" aria-hidden="true">LJ</span>
+        </button>
+
+        <div id="profileMenu"
+             class="hidden absolute right-0 mt-2 w-48 rounded shadow-lg origin-top-right ring-1 ring-black/5 bg-white"
+             role="menu"
+             aria-orientation="vertical"
+             aria-labelledby="profileBtn">
+          <a href="#" class="block px-4 py-3 text-sm hover:bg-gray-50" role="menuitem">Profile</a>
+          <a href="#" class="block px-4 py-3 text-sm hover:bg-gray-50" role="menuitem">Account settings</a>
+          <div class="border-t my-1"></div>
+          <button id="darkToggle"
+                  class="w-full text-left px-4 py-3 text-sm hover:bg-gray-50 flex items-center justify-between"
+                  role="menuitem">
+            <span>Dark mode</span>
+            <span id="darkIcon" class="text-sm text-gray-600">🌙</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="section text-center">
+    <div class="container">
+      <h2 class="text-4xl font-serif mb-8">About Us</h2>
+      <p class="max-w-3xl mx-auto text-gray-700 mb-10">
+        At LUXE Jewelry, we believe every piece tells a story. Since 2010, we design unique jewelry combining artisanal techniques with a modern touch.
+      </p>
+      <img src="../assets/img/team.jpg" alt="Our Team" class="mx-auto rounded-lg shadow-md w-1/2">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 mt-12">
+    <p class="text-sm">&copy; 2025 LUXE Jewelry</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
